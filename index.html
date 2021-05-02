@@ -1,56 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Résumé</title>
-    <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
-  </head>
-  <body>
-    <main>
-      <article>
-        <div class="page" style="border-color: midnightblue;">
-          <div class="stackable grid">
-            <div class="row">
-              <div class="three wide center aligned column">
-                <!-- Avatar -->
-              </div>
-              <div class="thirteen wide column">
-                <div class="stackable grid">
-                  <div class="sixteen wide column">
-                    <!-- Name, job, contacts -->
-                  </div>
-                  <div class="sixteen wide mobile only column">
-                    <div class="divider"></div>
-                  </div>
-                  <div class="sixteen wide column">
-                    <!-- Intro -->
-                  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Résumé</title>
+  <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
+  <style>
+    .color.red:before {background-color: red;}
+    .color.brown:before {background-color: brown;}
+  </style>
+</head>
+
+<body>
+  <main>
+    <article>
+      <div class="page" style="border-color: midnightblue;">
+        <div class="stackable grid">
+          <div class="row">
+            <div class="three wide center aligned column">
+              <!-- Avatar -->
+            </div>
+            <div class="thirteen wide column">
+              <div class="stackable grid">
+                <div class="sixteen wide column">
+                  <!-- Name, job, contacts -->
+                </div>
+                <div class="sixteen wide mobile only column">
+                  <div class="divider"></div>
+                </div>
+                <div class="sixteen wide column">
+                  <!-- Intro -->
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="sixteen wide column">
-                <div class="fat divider"></div>
-              </div>
+          </div>
+          <div class="row">
+            <div class="sixteen wide column">
+              <div class="fat divider"></div>
             </div>
-            <div class="row">
-              <div class="ten wide column">
-                <!-- Experience -->
-              </div>
-              <div class="six wide column">
-                <!-- Languages -->
-                <!-- Skills -->
-                <!-- Character -->
-                <!-- Likes -->
-                <!-- Dislikes -->
-                <!-- Wants -->
-                <!-- Education -->
-                <!-- Articles -->
-              </div>
+          </div>
+          <div class="row">
+            <div class="ten wide column">
+              <h3>Experience</h3>
+              <h6>Absent</h6>
+
+              <h3>Personal Life</h3>
+              <ul class="timeline">
+                <li>
+                  <p><em>31<sup>th</sup> December 2009</em></p>
+                  <p><strong>Relocated</strong> to <strong><a
+                        href="https://goo.gl/maps/ysr2MNx9aScjvbcD6"
+                        rel="external">Kyiv</a></strong> <sup><em id="lviv-rent-months"></em></sup></p>
+                </li>
+                <li>
+                  <p><em>12<sup>th</sup> September 2003</em></p>
+                  <p><strong>Born in </strong> to <strong><a
+                        href="https://goo.gl/maps/WzvqNadwGnT3k1589"
+                        rel="external">Lypova Dolyna, Sumy Oblast, Ukraine </a></strong> <sup><em id="lviv-rent-months"></em></sup></p>
+                </li>
+                <li class="details">
+                  <input type="checkbox" id="other">
+                  <label for="other" class="summary">I also do some other things from time to time &#x1f389;</label>
+                  <div>
+                    <ul>
+                      <li>occasionally I give lectures in <strong><a href="https://academy.binary-studio.com/"
+                            rel="external">Binary Studio Academy</a></strong></li>
+                      <li>sometimes I'm being <em>mentored</em> by those whom I <em>mentor</em></li>
+                      <li>I'm good at kitchen talks about pretty much anything</li>
+                      <li>I can play video games with you so that we become a better team</li>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <div class="six wide column">
+              <!-- Languages -->
+              <section>
+                <h3>Languages</h3>
+                <p class="tags small">
+                  <a href="/uk-ua" hreflang="uk" rel="alternate" class="language" lang="uk">&#x1f1fa;&#x1f1e6; <span>УКРАЇНСЬКА</span></a> 
+                  <a href="/ru-ru" hreflang="ru" rel="alternate" class="language" lang="ru">&#x1f1f7;&#x1f1fa; <span>РУССКИЙ</span></a> 
+                  <span class="language" lang="en">&#x1f1fa;&#x1f1f8; ENGLISH</span>
+                </p>
+              </section>
+              <!-- Skills -->
+              <section>
+                <h3>Skills</h3>
+                <p class="tags small">HTML CSS JS C++ PYTHON <span class="nowrap">QT/QML</span> REACT NODEJS <span class="nowrap">MICROSOFT OFFICE</span>WINDOWS SQL</p>
+              </section>
+              <!-- Character -->
+              <section>
+                <h3>Character</h3>
+                <p class="tags small"><a href="https://www.16personalities.com/estj-personality" rel="external">EXECUTIVE</a> ADVENTUROUS CAUTIOUS AMBITIOUS BOLD <span class="nowrap">EVEN-TEMPERED</span> CAREFUL COMPOSED CURIOUS <span class="nowrap">EMOTIONALLY STABLE</span> <span class="nowrap">GOOD-NATURED</span> HARDWORKING HARDY HONEST <span class="nowrap">DOWN-TO-EARTH</span> INTELLECTUAL LOGICAL CONSCIENTIOUS PERSEVERING STRAIGHTFORWARD  </p>
+              </section>
+              <!-- Likes -->
+              <section>
+                <h3>Likes&#x1f603;</h3>
+                <p class="tags small"><span class="nowrap">WRITE CODE</span> HUMOUR PATIENCE DOGS <button id="red"
+                    class="color red">RED</button> <span class="nowrap">PC GAMES</span> YARMAK BATTLEFIELD ESPORTS
+              </section>
+              <!-- Dislikes -->
+              <section>
+                <h3>Dislikes&#x1f61e;</h3>
+                <p class="tags small"><span class="nowrap">OWN BAD HABITS</span> FOOTBALL DRUGS<button id="brown" class="color brown">BROWN</button>
+                  <span class="nowrap">CALL OF DUTY</span></p>
+              </section>
+              <!-- Wants -->
+              <section>
+                <h3>Wants&#x1f97a;</h3>
+                <p class="tags small bulleted">
+                  <span class="tag">TO BE FIT AND HEALTHY</span>
+                  <span class="tag">TO LEARN MORE</span>
+                  <span class="tag">TO FIND FIRST WORKPLACE</span>
+                  <span class="tag">TO BE TAKE-TWO INTERACTIVE OWNER</span>
+              </section>
+              <!-- Education -->
+              <section>
+                <h3>Education</h3>
+                <ul class="timeline">
+                  <li>
+                    <div><em>August 2018 &ndash; present</em></div>
+                    <div><strong>Student at </strong> at <a href="https://kmrf.kiev.ua/"
+                        rel="external"><strong>SSU KPCMRFTT SUIT</strong></a></div>
+                  </li>
+
+                  <li>
+                    <div><em>1<sup>st</sup> September 2009 &ndash; 25<sup>st</sup> June 2018</em></div>
+                    <div><strong>Certificate of graduation</strong> at <strong>№245 Middle School of General
+                        Education</strong></div>
+                  </li>
+                </ul>
+              </section>
+              <!-- Articles -->
+              <section>
+                <h3>Articles</h3>
+                <p>None published <sup><em>yet</em></sup></p>
+              </section>
+
             </div>
           </div>
         </div>
-      </article>
-    </main>
-  </body>
+      </div>
+    </article>
+  </main>
+</body>
+
 </html>
